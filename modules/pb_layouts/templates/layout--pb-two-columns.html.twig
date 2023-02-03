@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Template for a one-column layout.
+ * Template for a two-column layout.
  *
  * Available variables:
  * - content: The content for this layout.
@@ -12,7 +12,7 @@
 {%
   set classes = [
     'layout',
-    'layout--pb-one-column',
+    'layout--pb-two-columns',
   ]
 %}
 {% if content %}
@@ -26,6 +26,12 @@
     {% if content.column_a %}
       <div {{ region_attributes.column_a.addClass('layout__region', 'layout__region--column_a') }}>
         {{ content.column_a }}
+      </div>
+    {% endif %}
+
+    {% if content.column_b %}
+      <div {{ region_attributes.column_b.addClass('layout__region', 'layout__region--column_b') }}>
+        {{ content.column_b }}
       </div>
     {% endif %}
 

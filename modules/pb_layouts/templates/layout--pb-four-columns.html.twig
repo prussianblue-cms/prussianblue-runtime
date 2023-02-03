@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Template for a one-column layout.
+ * Template for a four-column layout.
  *
  * Available variables:
  * - content: The content for this layout.
@@ -12,7 +12,7 @@
 {%
   set classes = [
     'layout',
-    'layout--pb-one-column',
+    'layout--pb-four-columns',
   ]
 %}
 {% if content %}
@@ -29,6 +29,24 @@
       </div>
     {% endif %}
 
+    {% if content.column_b %}
+      <div {{ region_attributes.column_b.addClass('layout__region', 'layout__region--column_b') }}>
+        {{ content.column_b }}
+      </div>
+    {% endif %}
+
+    {% if content.column_c %}
+      <div {{ region_attributes.column_c.addClass('layout__region', 'layout__region--column_c') }}>
+        {{ content.column_c }}
+      </div>
+    {% endif %}
+
+    {% if content.column_d %}
+      <div {{ region_attributes.column_d.addClass('layout__region', 'layout__region--column_d') }}>
+        {{ content.column_d }}
+      </div>
+    {% endif %}
+
     {% if content.footer %}
       <div {{ region_attributes.footer.addClass('layout__region', 'layout__region--footer') }}>
         {{ content.footer }}
@@ -36,3 +54,5 @@
     {% endif %}
   </div>
 {% endif %}
+
+
