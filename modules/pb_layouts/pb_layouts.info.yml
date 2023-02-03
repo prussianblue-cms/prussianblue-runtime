@@ -1,0 +1,5 @@
+name: 'PrussianBlue Layouts'
+type: module
+description: 'Provides layouts and the layout paragraph, as well as example templates for the layouts.'
+core: 9.x
+core_version_requirement: ^9 || ^10

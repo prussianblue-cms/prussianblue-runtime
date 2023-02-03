@@ -1,0 +1,5 @@
+name: 'PrussianBlue Runtime'
+type: module
+description: 'Provides runtime components for the PrussianBlue CMS'
+core: 9.x
+core_version_requirement: ^9 || ^10

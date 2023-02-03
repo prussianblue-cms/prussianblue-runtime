@@ -1,0 +1,39 @@
+pb_one_column:
+  label: 'One column'
+  category: 'PrussianBlue'
+  template: templates/layout--pb-one-column
+  classes:
+    width:
+      label: 'Width'
+      multiple: false
+      required: true
+      options:
+        'layout--wide': 'Wide column'
+        'layout--wide--full-background': 'Wide column with full-width background'
+        'layout--narrow': 'Narrow column'
+        'layout--narrow--full-background': 'Narrow column with full-width background'
+      default: 'layout--wide'
+      description: 'Defines the width of the section and the area covered by the background.'
+    custom_style:
+      label: 'Theme'
+      multiple: false
+      required: true
+      options:
+        'layout--theme-default': 'Default'
+        'layout--theme-light': 'Light'
+        'layout--theme-dark': 'Dark'
+      default: 'layout--theme-default'
+      description: 'Defines the color scheme of the section.'
+  default_region: column_a
+  regions:
+    header:
+      label: Header
+    column_a:
+      label: Content area
+    footer:
+      label: Footer
+  icon_map:
+    - [header]
+    - [column_a]
+    - [column_a]
+    - [footer]

@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Theme override to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ */
+#}
+
+<strong>Implement template <em>layout-pb-one-column</em> in your theme. You can copy the example from the pb_layouts module.</strong>
+
+{#
+
+{%
+  set classes = [
+    'layout',
+    'layout--pb-one-column',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.prefix %}
+      <div {{ region_attributes.prefix.addClass('layout__region', 'layout__region--prefix') }}>
+        {{ content.prefix }}
+      </div>
+    {% endif %}
+
+    {% if content.column_a %}
+      <div {{ region_attributes.column_a.addClass('layout__region', 'layout__region--column_a') }}>
+        {{ content.column_a }}
+      </div>
+    {% endif %}
+
+    {% if content.suffix %}
+      <div {{ region_attributes.suffix.addClass('layout__region', 'layout__region--suffix') }}>
+        {{ content.suffix }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
+#}
+
