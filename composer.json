@@ -1,0 +1,11 @@
+{
+  "name": "prussianblue-cms/prussianblue_runtime",
+  "description": "The PrussianBlue runtime is a set of modules that provide behaviors and routines that must be present during the lifetime of a website.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Noel Rivas",
+      "role": ""
+    }
+  ]
