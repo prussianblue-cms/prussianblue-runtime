@@ -1,0 +1,19 @@
+uuid: 194260f4-e1e2-4eb6-b5d6-43b739f5fda2
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: pb_layout
+label: Layout
+icon_uuid: null
+icon_default: null
+description: 'Layouts contain elements and let you distribute them visually.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      pb_one_column: 'One column'
+      pb_two_columns: 'Two columns'
+      pb_three_columns: 'Three columns'
+      pb_four_columns: 'Four columns'

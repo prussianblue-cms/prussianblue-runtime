@@ -14,8 +14,8 @@ pb_one_column:
         'layout--narrow--full-background': 'Narrow column with full-width background'
       default: 'layout--wide'
       description: 'Defines the width of the section and the area covered by the background.'
-    custom_style:
-      label: 'Theme'
+    color_scheme:
+      label: 'Color scheme'
       multiple: false
       required: true
       options:
@@ -36,4 +36,166 @@ pb_one_column:
     - [header]
     - [column_a]
     - [column_a]
+    - [footer]
+pb_two_columns:
+  label: 'Two columns'
+  category: 'PrussianBlue'
+  template: templates/layout--pb-two-columns
+  classes:
+    width:
+      label: 'Width'
+      multiple: false
+      required: true
+      options:
+        'layout--wide': 'Wide column'
+        'layout--wide--full-background': 'Wide column with full-width background'
+        'layout--narrow': 'Narrow column'
+        'layout--narrow--full-background': 'Narrow column with full-width background'
+      default: 'layout--wide'
+      description: 'Defines the width of the section and the area covered by the background.'
+    color_scheme:
+      label: 'Color scheme'
+      multiple: false
+      required: true
+      options:
+        'layout--theme-default': 'Default'
+        'layout--theme-light': 'Light'
+        'layout--theme-dark': 'Dark'
+      default: 'layout--theme-default'
+      description: 'Defines the color scheme of the section.'
+    balance:
+      label: 'Balance'
+      multiple: false
+      required: true
+      options:
+        'layout--width-equal': 'Equal width'
+        'layout--width-a-wider': 'Column a wider'
+        'layout--width-b-wider': 'Column b wider'
+      default: 'layout--width-equal'
+      description: 'Defines the distribution of width among columns.'
+  default_region: column_a
+  regions:
+    header:
+      label: Header
+    column_a:
+      label: Column A
+    column_b:
+      label: Column B
+    footer:
+      label: Footer
+  icon_map:
+    - [header]
+    - [column_a, column_b]
+    - [column_a, column_b]
+    - [footer]
+pb_three_columns:
+  label: 'Three columns'
+  category: 'PrussianBlue'
+  template: templates/layout--pb-three-columns
+  classes:
+    width:
+      label: 'Width'
+      multiple: false
+      required: true
+      options:
+        'layout--wide': 'Wide column'
+        'layout--wide--full-background': 'Wide column with full-width background'
+        'layout--narrow': 'Narrow column'
+        'layout--narrow--full-background': 'Narrow column with full-width background'
+      default: 'layout--wide'
+      description: 'Defines the width of the section and the area covered by the background.'
+    color_scheme:
+      label: 'Color scheme'
+      multiple: false
+      required: true
+      options:
+        'layout--theme-default': 'Default'
+        'layout--theme-light': 'Light'
+        'layout--theme-dark': 'Dark'
+      default: 'layout--theme-default'
+      description: 'Defines the color scheme of the section.'
+    balance:
+      label: 'Balance'
+      multiple: false
+      required: true
+      options:
+        'layout--width-equal': 'Equal width'
+        'layout--width-a-wider': 'Column a wider'
+        'layout--width-b-wider': 'Column b wider'
+        'layout--width-c-wider': 'Column c wider'
+      default: 'layout--width-equal'
+      description: 'Defines the distribution of width among columns.'
+  default_region: column_a
+  regions:
+    header:
+      label: Header
+    column_a:
+      label: Column A
+    column_b:
+      label: Column B
+    column_c:
+      label: Column C
+    footer:
+      label: Footer
+  icon_map:
+    - [header]
+    - [column_a, column_b, column_c]
+    - [column_a, column_b, column_c]
+    - [footer]
+pb_four_columns:
+  label: 'Four columns'
+  category: 'PrussianBlue'
+  template: templates/layout--pb-four-columns
+  classes:
+    width:
+      label: 'Width'
+      multiple: false
+      required: true
+      options:
+        'layout--wide': 'Wide column'
+        'layout--wide--full-background': 'Wide column with full-width background'
+        'layout--narrow': 'Narrow column'
+        'layout--narrow--full-background': 'Narrow column with full-width background'
+      default: 'layout--wide'
+      description: 'Defines the width of the section and the area covered by the background.'
+    color_scheme:
+      label: 'Color scheme'
+      multiple: false
+      required: true
+      options:
+        'layout--theme-default': 'Default'
+        'layout--theme-light': 'Light'
+        'layout--theme-dark': 'Dark'
+      default: 'layout--theme-default'
+      description: 'Defines the color scheme of the section.'
+    balance:
+      label: 'Balance'
+      multiple: false
+      required: true
+      options:
+        'layout--width-equal': 'Equal width'
+        'layout--width-a-wider': 'Column a wider'
+        'layout--width-b-wider': 'Column b wider'
+        'layout--width-c-wider': 'Column c wider'
+        'layout--width-d-wider': 'Column d wider'
+      default: 'layout--width-equal'
+      description: 'Defines the distribution of width among columns.'
+  default_region: column_a
+  regions:
+    header:
+      label: Header
+    column_a:
+      label: Column A
+    column_b:
+      label: Column B
+    column_c:
+      label: Column C
+    column_d:
+      label: Column D
+    footer:
+      label: Footer
+  icon_map:
+    - [header]
+    - [column_a, column_b, column_c, column_d]
+    - [column_a, column_b, column_c, column_d]
     - [footer]
