@@ -10,7 +10,7 @@ bundle: pb_layout
 mode: default
 content:
   field_pb_image:
-    type: entity_reference_autocomplete
+    type: media_library_widget
     weight: -199
     region: content
     settings:
