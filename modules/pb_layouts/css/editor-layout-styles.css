@@ -1,0 +1,53 @@
+.field--widget-layout-paragraphs .layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+ * Header and footer are always 100% width
+ */
+.field--widget-layout-paragraphs .layout .layout__region--header,
+.field--widget-layout-paragraphs .layout .layout__region--footer {
+  flex-basis: 100%;
+}
+
+.field--widget-layout-paragraphs .layout .layout__region {
+  padding: 5px;
+}
+
+/**
+ * One column
+ */
+.field--widget-layout-paragraphs .layout--pb-one-column .layout__region--column_a {
+  flex-basis: 100%;
+}
+
+/**
+ * Two columns
+ */
+.field--widget-layout-paragraphs .layout--pb-two-columns .layout__region--column_a,
+.field--widget-layout-paragraphs .layout--pb-two-columns .layout__region--column_b {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+/**
+ * Three columns
+ */
+.field--widget-layout-paragraphs .layout--pb-three-columns .layout__region--column_a,
+.field--widget-layout-paragraphs .layout--pb-three-columns .layout__region--column_b,
+.field--widget-layout-paragraphs .layout--pb-three-columns .layout__region--column_c {
+  flex-basis: 33%;
+  flex-grow: 1;
+}
+
+/**
+ * Four columns
+ */
+.field--widget-layout-paragraphs .layout--pb-four-columns .layout__region--column_a,
+.field--widget-layout-paragraphs .layout--pb-four-columns .layout__region--column_b,
+.field--widget-layout-paragraphs .layout--pb-four-columns .layout__region--column_c,
+.field--widget-layout-paragraphs .layout--pb-four-columns .layout__region--column_d {
+  flex-basis: 25%;
+  flex-grow: 1;
+}

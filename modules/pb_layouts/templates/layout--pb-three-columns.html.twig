@@ -16,6 +16,7 @@
   ]
 %}
 {% if content %}
+  {{ attach_library('pb_layouts/pb_editor_layout_styles') }}
   <div{{ attributes.addClass(classes) }}>
     {% if content.header %}
       <div {{ region_attributes.header.addClass('layout__region', 'layout__region--header') }}>

@@ -1,0 +1,4 @@
+pb_editor_layout_styles:
+  css:
+    theme:
+      css/editor-layout-styles.css: {}
