@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pb_layout.field_pb_image
+    - paragraphs.paragraphs_type.pb_layout
+id: paragraph.pb_layout.default
+targetEntityType: paragraph
+bundle: pb_layout
+mode: default
+content:
+  field_pb_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

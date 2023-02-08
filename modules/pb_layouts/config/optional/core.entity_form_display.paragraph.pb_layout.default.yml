@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pb_layout.field_pb_image
+    - paragraphs.paragraphs_type.pb_layout
+id: paragraph.pb_layout.default
+targetEntityType: paragraph
+bundle: pb_layout
+mode: default
+content:
+  field_pb_image:
+    type: entity_reference_autocomplete
+    weight: -199
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: -200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
