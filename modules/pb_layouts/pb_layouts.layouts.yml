@@ -24,6 +24,54 @@ pb_one_column:
         'layout--theme-dark': 'Dark'
       default: 'layout--theme-default'
       description: 'Defines the color scheme of the section.'
+    top_margin:
+      label: 'Top margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-top-none': 'None'
+        'layout--margin-top-sm': 'Small'
+        'layout--margin-top-md': 'Medium'
+        'layout--margin-top-lg': 'Large'
+        'layout--margin-top-xl': 'Extra large'
+      default: 'layout--margin-top-none'
+      description: 'Defines the blank space left before the layout.'
+    bottom_margin:
+      label: 'Bottom margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-bottom-none': 'None'
+        'layout--margin-bottom-sm': 'Small'
+        'layout--margin-bottom-md': 'Medium'
+        'layout--margin-bottom-lg': 'Large'
+        'layout--margin-bottom-xl': 'Extra large'
+      default: 'layout--margin-bottom-none'
+      description: 'Defines the blank space left after the layout.'
+    top_padding:
+      label: 'Top padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-top-none': 'None'
+        'layout--padding-top-sm': 'Small'
+        'layout--padding-top-md': 'Medium'
+        'layout--padding-top-lg': 'Large'
+        'layout--padding-top-xl': 'Extra large'
+      default: 'layout--padding-top-none'
+      description: 'Defines the internal padding at the top of the layout.'
+    bottom_padding:
+      label: 'Bottom padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-bottom-none': 'None'
+        'layout--padding-bottom-sm': 'Small'
+        'layout--padding-bottom-md': 'Medium'
+        'layout--padding-bottom-lg': 'Large'
+        'layout--padding-bottom-xl': 'Extra large'
+      default: 'layout--padding-bottom-none'
+      description: 'Defines the internal padding at the bottom of the layout.'
   default_region: column_a
   regions:
     header:
@@ -73,6 +121,54 @@ pb_two_columns:
         'layout--width-b-wider': 'Column b wider'
       default: 'layout--width-equal'
       description: 'Defines the distribution of width among columns.'
+    top_margin:
+      label: 'Top margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-top-none': 'None'
+        'layout--margin-top-sm': 'Small'
+        'layout--margin-top-md': 'Medium'
+        'layout--margin-top-lg': 'Large'
+        'layout--margin-top-xl': 'Extra large'
+      default: 'layout--margin-top-none'
+      description: 'Defines the blank space left before the layout.'
+    bottom_margin:
+      label: 'Bottom margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-bottom-none': 'None'
+        'layout--margin-bottom-sm': 'Small'
+        'layout--margin-bottom-md': 'Medium'
+        'layout--margin-bottom-lg': 'Large'
+        'layout--margin-bottom-xl': 'Extra large'
+      default: 'layout--margin-bottom-none'
+      description: 'Defines the blank space left after the layout.'
+    top_padding:
+      label: 'Top padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-top-none': 'None'
+        'layout--padding-top-sm': 'Small'
+        'layout--padding-top-md': 'Medium'
+        'layout--padding-top-lg': 'Large'
+        'layout--padding-top-xl': 'Extra large'
+      default: 'layout--padding-top-none'
+      description: 'Defines the internal padding at the top of the layout.'
+    bottom_padding:
+      label: 'Bottom padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-bottom-none': 'None'
+        'layout--padding-bottom-sm': 'Small'
+        'layout--padding-bottom-md': 'Medium'
+        'layout--padding-bottom-lg': 'Large'
+        'layout--padding-bottom-xl': 'Extra large'
+      default: 'layout--padding-bottom-none'
+      description: 'Defines the internal padding at the bottom of the layout.'
   default_region: column_a
   regions:
     header:
@@ -125,6 +221,54 @@ pb_three_columns:
         'layout--width-c-wider': 'Column c wider'
       default: 'layout--width-equal'
       description: 'Defines the distribution of width among columns.'
+    top_margin:
+      label: 'Top margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-top-none': 'None'
+        'layout--margin-top-sm': 'Small'
+        'layout--margin-top-md': 'Medium'
+        'layout--margin-top-lg': 'Large'
+        'layout--margin-top-xl': 'Extra large'
+      default: 'layout--margin-top-none'
+      description: 'Defines the blank space left before the layout.'
+    bottom_margin:
+      label: 'Bottom margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-bottom-none': 'None'
+        'layout--margin-bottom-sm': 'Small'
+        'layout--margin-bottom-md': 'Medium'
+        'layout--margin-bottom-lg': 'Large'
+        'layout--margin-bottom-xl': 'Extra large'
+      default: 'layout--margin-bottom-none'
+      description: 'Defines the blank space left after the layout.'
+    top_padding:
+      label: 'Top padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-top-none': 'None'
+        'layout--padding-top-sm': 'Small'
+        'layout--padding-top-md': 'Medium'
+        'layout--padding-top-lg': 'Large'
+        'layout--padding-top-xl': 'Extra large'
+      default: 'layout--padding-top-none'
+      description: 'Defines the internal padding at the top of the layout.'
+    bottom_padding:
+      label: 'Bottom padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-bottom-none': 'None'
+        'layout--padding-bottom-sm': 'Small'
+        'layout--padding-bottom-md': 'Medium'
+        'layout--padding-bottom-lg': 'Large'
+        'layout--padding-bottom-xl': 'Extra large'
+      default: 'layout--padding-bottom-none'
+      description: 'Defines the internal padding at the bottom of the layout.'
   default_region: column_a
   regions:
     header:
@@ -180,6 +324,54 @@ pb_four_columns:
         'layout--width-d-wider': 'Column d wider'
       default: 'layout--width-equal'
       description: 'Defines the distribution of width among columns.'
+    top_margin:
+      label: 'Top margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-top-none': 'None'
+        'layout--margin-top-sm': 'Small'
+        'layout--margin-top-md': 'Medium'
+        'layout--margin-top-lg': 'Large'
+        'layout--margin-top-xl': 'Extra large'
+      default: 'layout--margin-top-none'
+      description: 'Defines the blank space left before the layout.'
+    bottom_margin:
+      label: 'Bottom margin'
+      multiple: false
+      required: true
+      options:
+        'layout--margin-bottom-none': 'None'
+        'layout--margin-bottom-sm': 'Small'
+        'layout--margin-bottom-md': 'Medium'
+        'layout--margin-bottom-lg': 'Large'
+        'layout--margin-bottom-xl': 'Extra large'
+      default: 'layout--margin-bottom-none'
+      description: 'Defines the blank space left after the layout.'
+    top_padding:
+      label: 'Top padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-top-none': 'None'
+        'layout--padding-top-sm': 'Small'
+        'layout--padding-top-md': 'Medium'
+        'layout--padding-top-lg': 'Large'
+        'layout--padding-top-xl': 'Extra large'
+      default: 'layout--padding-top-none'
+      description: 'Defines the internal padding at the top of the layout.'
+    bottom_padding:
+      label: 'Bottom padding'
+      multiple: false
+      required: true
+      options:
+        'layout--padding-bottom-none': 'None'
+        'layout--padding-bottom-sm': 'Small'
+        'layout--padding-bottom-md': 'Medium'
+        'layout--padding-bottom-lg': 'Large'
+        'layout--padding-bottom-xl': 'Extra large'
+      default: 'layout--padding-bottom-none'
+      description: 'Defines the internal padding at the bottom of the layout.'
   default_region: column_a
   regions:
     header:
