@@ -1,1 +1,31 @@
 <?php
+
+/**
+ * Implements hook_layout_alter()
+ *
+ * DON'T EDIT THIS FILE! This is just an example. Implement the hook
+ * in a custom module for your project.
+ *
+ * This is how you can add a custom class (a "powerup") to
+ * all or some layouts for a specific project.
+ */
+
+// function pb_layouts_layout_alter(&$definitions) {
+//     foreach ($definitions as &$definition) {
+//       $id = $definition->id();
+//
+//       // All the base paragraphs provided by PrussianBlue
+//       // are prefixed by pb_
+//       // Adjust the pattern matching if you are targeting
+//       // a layout from a different source, or if you don't
+//       // want to target all the PB layouts.
+//       if(substr($id,0,3) == "pb_") {
+//         $additional = $definition->get('additional');
+//         $additional['classes']['powerups']['label'] = 'This will be awesome';
+//         $additional['classes']['powerups']['options'] = array(
+//           'fantastic--powerup' => 'Very fantastic',
+//         );
+//         $definition->set('additional', $additional);
+//       }
+//     }
+// }
