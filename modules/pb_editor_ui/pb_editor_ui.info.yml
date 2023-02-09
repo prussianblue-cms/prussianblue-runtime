@@ -1,5 +1,0 @@
-name: 'PrussianBlue Editor UI Improvements'
-type: module
-description: 'Provides improvements to the editor interface.'
-core: 9.x
-core_version_requirement: ^9 || ^10
