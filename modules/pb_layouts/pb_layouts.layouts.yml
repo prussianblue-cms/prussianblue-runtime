@@ -19,10 +19,9 @@ pb_one_column:
       multiple: false
       required: true
       options:
-        'layout--theme-default': 'Default'
-        'layout--theme-light': 'Light'
-        'layout--theme-dark': 'Dark'
-      default: 'layout--theme-default'
+        'layout--light': 'Light'
+        'layout--dark': 'Dark'
+      default: 'layout--light'
       description: 'Defines the color scheme of the section.'
     top_margin:
       label: 'Top margin'
@@ -106,10 +105,9 @@ pb_two_columns:
       multiple: false
       required: true
       options:
-        'layout--theme-default': 'Default'
-        'layout--theme-light': 'Light'
-        'layout--theme-dark': 'Dark'
-      default: 'layout--theme-default'
+        'layout--light': 'Light'
+        'layout--dark': 'Dark'
+      default: 'layout--light'
       description: 'Defines the color scheme of the section.'
     balance:
       label: 'Balance'
@@ -205,10 +203,9 @@ pb_three_columns:
       multiple: false
       required: true
       options:
-        'layout--theme-default': 'Default'
-        'layout--theme-light': 'Light'
-        'layout--theme-dark': 'Dark'
-      default: 'layout--theme-default'
+        'layout--light': 'Light'
+        'layout--dark': 'Dark'
+      default: 'layout--light'
       description: 'Defines the color scheme of the section.'
     balance:
       label: 'Balance'
@@ -307,10 +304,9 @@ pb_four_columns:
       multiple: false
       required: true
       options:
-        'layout--theme-default': 'Default'
-        'layout--theme-light': 'Light'
-        'layout--theme-dark': 'Dark'
-      default: 'layout--theme-default'
+        'layout--light': 'Light'
+        'layout--dark': 'Dark'
+      default: 'layout--light'
       description: 'Defines the color scheme of the section.'
     balance:
       label: 'Balance'
