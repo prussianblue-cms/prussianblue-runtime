@@ -49,5 +49,5 @@
 .field--widget-layout-paragraphs .layout--pb-four-columns .layout__region--column_c,
 .field--widget-layout-paragraphs .layout--pb-four-columns .layout__region--column_d {
   flex-basis: 25%;
-  flex-grow: 1;
+  max-width: 25%;
 }
